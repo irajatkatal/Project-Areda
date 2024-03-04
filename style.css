@@ -1,0 +1,1033 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* universal selector */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+
+
+/* body element stylling */
+body {
+    padding: 30px;
+    background-color: #fff;
+}
+
+/* Frames at top and botton of the screen */
+
+.top-div,
+.bottom-div {
+    position: fixed;
+    height: 30px;
+    min-width: 100vw;
+    background-color: #fff;
+    z-index: 999;
+}
+
+.top-div {
+    top: 0;
+}
+
+.bottom-div {
+    bottom: 0;
+}
+
+
+/* Header bar starts here */
+
+header {
+    position: fixed;
+    top: 30px;
+    width: calc(100% - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    z-index: 1;
+    transition: 1s ease-in-out;
+}
+
+/* logo X areda */
+header img {
+    z-index: 10;
+    width: 125px;
+}
+
+/* Header Nav Bar */
+
+
+header nav ul {
+    margin: 10px;
+    list-style: none;
+}
+
+header nav .nav-list li {
+    display: inline-block;
+    padding: 2px 10px;
+
+}
+
+header nav .nav-list li a {
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav .nav-list li a:hover {
+    color: #7c7c7c;
+}
+
+header nav .nav-list li ul.dropdown {
+    position: absolute;
+    display: none;
+    z-index: 999;
+}
+
+header nav .nav-list li:hover .dropdown {
+    display: block;
+    width: 150px;
+    background-color: #333;
+    padding: 20px;
+}
+
+header nav ul li.active {
+    border: 1px solid;
+    box-shadow: 0 0 20px;
+}
+
+/* Header on scrolllong */
+header.scrolled {
+    background-color: #333;
+    height: 60px;
+}
+
+/* Drop Down menu icon */
+
+.toggle-bar {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: #4a4a4a;
+    display: none;
+    text-align: center;
+    border-radius: 5px;
+    padding: auto;
+    cursor: pointer;
+}
+
+.toggle-bar .stick {
+    display: block;
+    margin: 4px;
+    width: 80%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+
+
+/* Header bar ends  here */
+
+
+/* main container named Wrapper starts here */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* First main div inside wrapper starts here  */
+.wrapper .first-main-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url("Pictures/marek-piwnicki-LGgKrtjNsoI-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+.wrapper .first-main-div .areda-slides {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+}
+
+.wrapper .first-main-div .areda-slides h3 {
+    font-size: 48px;
+    font-weight: 200;
+}
+
+.wrapper .first-main-div .areda-slides h3 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.wrapper .first-main-div .areda-slides p {
+    font: 20px;
+    text-align: center;
+    margin: 10px auto 20px;
+}
+
+.areda-slides .view-more {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    width: 150px;
+    height: 38px;
+    transition: 0.4s linear;
+}
+
+.wrapper .first-main-div .areda-slides .view-more:hover {
+    background-color: #ff7777;
+    border: none;
+}
+
+/* First top main div ends here */
+
+/* second top main div inside wrapper starts here  */
+.wrapper .second-main-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    /* padding: 50px 0; */
+    background-color: rgb(51, 51, 51);
+}
+
+.wrapper .second-main-div .responsive-design {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 200px;
+    flex-direction: column;
+    margin: 30px 10px;
+}
+
+.wrapper .second-main-div .responsive-design .logo {
+    font-size: 28px;
+    height: 70px;
+    width: 70px;
+    background-color: gray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .second-main-div .responsive-design .logo-text-heading {
+    font-size: 18px;
+    font-weight: 250;
+    margin: 10px;
+}
+
+.wrapper .second-main-div .responsive-design .logo-text-paragraph {
+    font-size: 12px;
+    text-align: center;
+    font-weight: 200;
+}
+
+/* Second top main div ---- inside wrapper ends here */
+
+
+/* Third main div starts here */
+.third-main-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0;
+    width: 100%;
+}
+
+.third-main-div .random-text h2 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.third-main-div .random-text p {
+    font-weight: 300;
+}
+
+.third-main-div .pictures-with-text {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    background-color: transparent;
+}
+
+.third-main-div .pictures-with-text .joahna-smith {
+    width: 100%;
+    text-align: center;
+}
+
+.third-main-div .pictures-with-text .joahna-smith img {
+    margin: 10px 0;
+    width: 90%;
+    object-fit: cover;
+}
+
+.third-main-div .pictures-with-text .joahna-smith h3 {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.third-main-div .pictures-with-text .joahna-smith p {
+    font-size: 12px;
+    font-weight: 250;
+    padding: 10px;
+}
+
+.third-main-div .pictures-with-text .joahna-smith .job-discription {
+    font-weight: 300;
+}
+
+.third-main-div .pictures-with-text .social-media-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.third-main-div .pictures-with-text .social-media-icons .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(120, 120, 120);
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.third-main-div .pictures-with-text .social-media-icons .icons:hover {
+    background-color: rgb(57, 57, 57);
+    color: #fff;
+}
+
+/* third main div ends here */
+
+
+/* fourth main div starts here*/
+
+.wrapper .fourth-main-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+.wrapper .fourth-main-div .recent-project-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 20%);
+    color: #fff;
+    width: 100%;
+    height: 200px;
+}
+
+.wrapper .fourth-main-div .recent-project-div h2 {
+    font-size: 32px;
+    font-weight: 250;
+}
+
+.wrapper .fourth-main-div .recent-project-div p {
+    font-size: 16px;
+    font-weight: 250;
+}
+
+/* .fourth-main-div .hover-effect-div {
+
+    border: 2px solid red;
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.fourth-main-div .picture-gallary .hover-effect {
+    position: absolute;
+    top: 20px;
+    left: -100%;
+    width: 440px;
+    height: 300px;
+    background-color: rgba(233, 116, 108, 0.523);
+    /* z-index: -1; */
+}
+
+
+.fourth-main-div .picture-gallary .hover-effect:hover {
+    z-index: 999;
+}
+
+.wrapper .fourth-main-div .picture-gallary {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.wrapper .fourth-main-div .picture-gallary .img-divs img {
+    width: 100%;
+    /* height: 359px; */
+    object-fit: cover;
+}
+
+.wrapper .fourth-main-div .picture-gallary .img-divs img:hover {
+    animation: slideanime 2s linear 1 normal;
+}
+
+
+@keyframes slideanime {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 20px;
+    }
+}
+
+/* fourth main div ends here */
+
+
+/* Fiveth main div starts here */
+
+.fiveth-main-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 0;
+    position: relative;
+}
+
+.fiveth-main-div .happy-client {
+    text-align: center;
+    width: 80%;
+
+}
+
+.fiveth-main-div h2 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.fiveth-main-div p {
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.wrapper .fiveth-main-div .rectangular {
+    position: absolute;
+    bottom: -20px;
+    background-color: #fff;
+    height: 50px;
+    width: 50px;
+    transform: rotate(45deg);
+}
+
+/* Fiveth main div -- inside top main div ends here */
+
+
+/* Sixth main div starts here */
+.sixth-main-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-image: url(Pictures/eberhard-grossgasteiger-xC7Ho08RYF4-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 0 90px;
+}
+
+.sixth-main-div .first-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url(Pictures/dirk-von-loen-wagner-Hrmayke-v8g-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 400px;
+}
+
+
+.sixth-main-div .first-div a img {
+    width: 180px;
+}
+
+
+.sixth-main-div .discover-memory {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.sixth-main-div .discover-memory h2 {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.sixth-main-div .discover-memory p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.sixth-main-div .memories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: start;
+    width: 100%;
+}
+
+.sixth-main-div .memories .images-with-text {
+    position: relative;
+    width: 350px;
+    background-color: #fff;
+    margin: 10px;
+    text-align: center;
+}
+
+.sixth-main-div .memories .images-with-text img {
+    width: 100%;
+}
+
+.sixth-main-div .memories .images-with-text .date-tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40px;
+    height: 60px;
+    background-color: #ff7777;
+    color: #fff;
+    position: absolute;
+    top: 0;
+}
+
+.sixth-main-div .memories .images-with-text .date-tag h5 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.sixth-main-div .memories .images-with-text .date-tag h6 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.sixth-main-div .memories .images-with-text .dog-img-div {
+    position: relative;
+    width: 100%;
+}
+
+
+.sixth-main-div .memories .images-with-text .dog-img-div .nature-msg {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    /* top: 40%; */
+    color: #fff;
+    width: 100%;
+    transition: 1s ease-in;
+    box-shadow: 0 -1px 100px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px);
+}
+
+.sixth-main-div .memories .images-with-text .nature-msg:hover {
+    opacity: 0;
+}
+
+.sixth-main-div .memories .images-with-text .nature-msg span {
+    font-size: 12px;
+}
+
+.sixth-main-div .memories .images-with-text h3 {
+    /* padding: 10px 20px 10px; */
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 20px;
+    line-height: 1.2em;
+}
+
+.sixth-main-div .memories .images-with-text h3:hover {
+    color: #ff7777;
+    cursor: pointer;
+}
+
+.sixth-main-div .memories .images-with-text span {
+    font-size: 12px;
+    padding: 20px;
+}
+
+.sixth-main-div .memories .images-with-text p {
+    font-size: 12px;
+    font-weight: 300;
+    padding: 10px 30px 40px;
+}
+
+/* Sixth main div ends here */
+
+
+/* Seventh main div starts here */
+
+.seventh-main-div {
+    position: relative;
+    background-image: url(Pictures/anatoliy-shostak-bd8cp1NAago-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.seventh-main-div .first-div {
+    /* padding: 0 200px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ff7777;
+    width: 100%;
+    height: 120px;
+    color: #fff;
+}
+
+
+.seventh-main-div .first-div h5 {
+    font-size: 24px;
+    font-weight: 300;
+    /* margin: 100px; */
+}
+
+.seventh-main-div .first-div a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 200;
+    background-color: #333;
+    width: 200px;
+    height: 30px;
+    transition: 0.6s;
+}
+
+.seventh-main-div .first-div a:hover {
+    background-color: #ff7777;
+    border: 1px solid;
+}
+
+.seventh-main-div .form-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    left: 180px;
+    width: 50%;
+    height: 1000px;
+    background-color: #eeeeee;
+}
+
+.seventh-main-div .form-div h3 {
+    font-size: 36px;
+    font-weight: 200;
+}
+
+.seventh-main-div .form-div .input-section form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.seventh-main-div .form-div .input-section form input {
+    width: 90%;
+    height: 50px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid rgb(128, 128, 128);
+}
+
+.seventh-main-div .form-div .input-section form textarea {
+    margin: 20px;
+    width: 90%;
+    padding: 10px 10px;
+    border: 1px solid rgb(134, 134, 134);
+}
+
+.seventh-main-div .form-div .input-section form button {
+    margin: 20px;
+    padding: 8px 30px;
+    background-color: #333;
+    color: #fff;
+    font-weight: 250;
+    border: none;
+}
+
+.seventh-main-div .form-div .input-section form button:hover {
+    background-color: #ff7777;
+}
+
+.seventh-main-div .form-div .input-section form input:focus,
+.seventh-main-div .form-div .input-section form textarea:focus {
+    outline: none;
+}
+
+/* Seventh main divs ends here */
+
+
+/* last main div starts here */
+
+.last-main-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: hsl(0, 0%, 7%);
+}
+
+.last-main-div .social-media-icons {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    border-bottom: 1px solid rgb(146, 146, 146);
+}
+
+.last-main-div .social-media-icons i {
+    margin: 0 10px;
+}
+
+.last-main-div .social-media-icons i {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: hsl(0, 0%, 20%);
+    color: #fff;
+}
+
+.last-main-div .social-media-icons i:hover {
+    background-color: #ff7777;
+}
+
+.last-main-div .last-container {
+    /* border: 2px solid red; */
+    color: #fff;
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    width: 80%;
+    border-bottom: 2px solid red;
+}
+
+.wrapper .last-main-div .last-container .main-class {
+    display: flex;
+    align-items: start;
+    /* justify-content: start; */
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+}
+
+.wrapper .last-main-div .last-container .main-class .heading {
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid;
+    font-size: 12px;
+}
+
+
+.wrapper .last-main-div .last-container .main-class .popular-post-second-div img {
+    height: 90px;
+    float: left;
+    margin: 10px;
+}
+
+.wrapper .last-main-div .last-container .main-class .popular-post-second-div h4,
+.wrapper .last-main-div .last-container .main-class .popular-post-second-div p,
+.wrapper .last-main-div .last-container .main-class .big-image h3 {
+    color: rgb(149, 149, 149);
+    font-size: 12px;
+    font-weight: 400;
+    margin: 10px 0;
+    padding: 0 10px;
+}
+
+.wrapper .last-main-div .last-container .main-class .popular-post-second-div h3 {
+    font-size: 12px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.wrapper .last-main-div .last-container .main-class .big-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.wrapper .last-main-div .last-container .second-container {
+    align-items: start;
+}
+
+.wrapper .last-main-div .last-container .main-class .big-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.wrapper .last-main-div .last-container .main-class .big-image img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.wrapper .last-main-div .last-container .main-class .big-image h3 {
+    margin: 30px 0 20px;
+    font-weight: 300;
+}
+
+.wrapper .last-main-div .last-container .main-class .big-image p {
+    font-size: 12px;
+    font-weight: 300;
+    /* padding: 0 10px; */
+}
+
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th {
+    font-size: 16px;
+    border-bottom: 1px solid red;
+    padding: 5px;
+}
+
+td {
+    font-size: 12px;
+    border-bottom: 1px solid rgb(156, 156, 156);
+    padding: 5px;
+}
+
+
+.footer {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    color: #fff;
+}
+
+/* last main div ends here */
+
+
+
+@media (max-width: 1200px) {
+    body {
+        padding: 15px;
+    }
+
+    header {
+        width: calc(100% - 30px);
+        top: 15px;
+    }
+
+    .wrapper .second-main-div .responsive-design {
+        width: 30%;
+    }
+
+    .third-main-div .pictures-with-text {
+        width: 90%;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+
+    .sixth-main-div .first-div a img {
+        width: 150px;
+    }
+
+    .sixth-main-div .memories .images-with-text {
+        width: 300px;
+    }
+
+    .seventh-main-div .form-div {
+        height: 900px;
+        left: 150px;
+    }
+
+    .last-main-div .last-container {
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width: 992px) {
+    body {
+        padding: 15px;
+    }
+
+    .top-div,
+    .bottom-div {
+        height: 15px;
+    }
+
+    header {
+        background-color: #333;
+        padding: 10px 20px;
+    }
+
+    header img {
+        width: 100px;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    header .toggle-bar {
+        display: block;
+    }
+
+
+    .wrapper .second-main-div .child1 {
+        width: 70%;
+    }
+
+    .wrapper .second-main-div .child2,
+    .wrapper .second-main-div .child3 {
+        width: 40%;
+    }
+
+    .third-main-div .pictures-with-text {
+        width: 80%;
+        grid-template-columns: 50% 50%
+    }
+
+    .wrapper .fourth-main-div .picture-gallary {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sixth-main-div .first-div a img {
+        width: 250px;
+    }
+
+    .sixth-main-div .memories .images-with-text {
+        width: 80%;
+    }
+
+    .seventh-main-div .first-div {
+        flex-direction: column;
+    }
+
+    .seventh-main-div .form-div {
+        width: 60%;
+        left: 50px;
+    }
+
+    .last-main-div .last-container {
+        width: 80%;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: 50% 50%;
+
+    }
+
+    .last-main-div .last-container .first-container {
+        grid-column: 1/3;
+    }
+
+    .wrapper .last-main-div .last-container .main-class .big-image img {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .wrapper .second-main-div .responsive-design {
+        width: 100%;
+    }
+
+    .third-main-div .pictures-with-text {
+        width: 100%;
+        grid-template-columns: 100%
+    }
+
+    .third-main-div .pictures-with-text .joahna-smith img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .wrapper .fourth-main-div .picture-gallary {
+        grid-template-columns: 1fr;
+    }
+
+    .sixth-main-div .first-div a img {
+        margin: 10px;
+        width: 250px;
+    }
+
+    .last-main-div .last-container {
+        width: 80%;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .last-main-div .last-container .first-container {
+        grid-column: 1;
+    }
+
+}
